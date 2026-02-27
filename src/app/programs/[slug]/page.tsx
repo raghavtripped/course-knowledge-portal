@@ -25,7 +25,7 @@ export default function ProgramDetailPage({ params }: { params: Promise<{ slug: 
         <PageTransition>
             {/* Header */}
             <div className="bg-navy text-white">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-10 lg:py-14">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-14">
                     <nav className="flex items-center gap-1.5 text-[12px] text-white/50 mb-6">
                         <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
@@ -36,17 +36,17 @@ export default function ProgramDetailPage({ params }: { params: Promise<{ slug: 
                     <span className="text-[10px] uppercase tracking-[0.15em] text-white/40 font-medium">{program.duration}</span>
                     <h1 className="text-3xl lg:text-4xl font-bold tracking-tight mt-1">{program.name}</h1>
                     <p className="text-white/60 mt-3 text-[15px] leading-relaxed max-w-2xl">{program.description}</p>
-                    <div className="flex items-center gap-8 mt-8 text-sm">
+                    <div className="flex flex-wrap items-center gap-4 sm:gap-8 mt-6 sm:mt-8 text-sm">
                         <div><span className="text-white/40 text-[10px] uppercase tracking-wider block">Credits</span><span className="text-xl font-bold mt-0.5 block">{program.totalCredits}</span></div>
-                        <div className="w-px h-10 bg-white/15" />
+                        <div className="hidden sm:block w-px h-10 bg-white/15" />
                         <div><span className="text-white/40 text-[10px] uppercase tracking-wider block">Courses</span><span className="text-xl font-bold mt-0.5 block">{program.totalCourses}</span></div>
-                        <div className="w-px h-10 bg-white/15" />
+                        <div className="hidden sm:block w-px h-10 bg-white/15" />
                         <div><span className="text-white/40 text-[10px] uppercase tracking-wider block">Terms</span><span className="text-xl font-bold mt-0.5 block">{program.terms}</span></div>
                     </div>
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-10 lg:py-14 space-y-14">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-14 space-y-10 sm:space-y-14">
                 {/* Curriculum Timeline */}
                 <div>
                     <div className="flex items-center gap-2 mb-6">
@@ -86,13 +86,13 @@ export default function ProgramDetailPage({ params }: { params: Promise<{ slug: 
                         <div className="h-px w-6 bg-crimson" />
                         <h2 className="text-xl font-bold">Skill Distribution</h2>
                     </div>
-                    <div className="border rounded-lg p-6">
-                        <div className="h-64">
+                    <div className="border rounded-lg p-4 sm:p-6">
+                        <div className="h-64 -ml-2 sm:ml-0">
                             <ResponsiveContainer width="100%" height="100%">
-                                <BarChart data={program.skillDistribution} layout="vertical" margin={{ left: 10 }}>
+                                <BarChart data={program.skillDistribution} layout="vertical" margin={{ left: 0 }}>
                                     <CartesianGrid strokeDasharray="3 3" opacity={0.2} />
-                                    <XAxis type="number" domain={[0, 40]} tickFormatter={(v) => `${v}%`} tick={{ fontSize: 12 }} />
-                                    <YAxis type="category" dataKey="skill" width={140} tick={{ fontSize: 12 }} />
+                                    <XAxis type="number" domain={[0, 40]} tickFormatter={(v) => `${v}%`} tick={{ fontSize: 11 }} />
+                                    <YAxis type="category" dataKey="skill" width={100} tick={{ fontSize: 11 }} />
                                     <Tooltip formatter={(v: unknown) => `${v}%`} />
                                     <Bar dataKey="percentage" radius={[0, 4, 4, 0]}>
                                         {program.skillDistribution.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}

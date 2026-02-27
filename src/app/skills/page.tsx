@@ -26,7 +26,7 @@ export default function SkillsPage() {
         <PageTransition>
             {/* Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
@@ -41,7 +41,7 @@ export default function SkillsPage() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-10">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-8 sm:py-10">
                 <div className="flex flex-col lg:flex-row gap-10">
                     {/* Skill Clusters */}
                     <div className="flex-1 space-y-8">
@@ -60,8 +60,8 @@ export default function SkillsPage() {
                                                 key={s.id}
                                                 onClick={() => setSelected(selected === s.id ? null : s.id)}
                                                 className={`text-sm px-3.5 py-2 rounded-lg border transition-all duration-200 ${selected === s.id
-                                                        ? "bg-navy text-white border-navy shadow-md"
-                                                        : "bg-card hover:shadow-sm hover:-translate-y-0.5 border-border text-foreground"
+                                                    ? "bg-navy text-white border-navy shadow-md"
+                                                    : "bg-card hover:shadow-sm hover:-translate-y-0.5 border-border text-foreground"
                                                     }`}
                                             >
                                                 <span className="font-medium">{s.name}</span>

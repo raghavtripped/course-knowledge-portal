@@ -28,7 +28,7 @@ export default function CourseDetailPage({ params }: { params: Promise<{ slug: s
         <PageTransition>
             {/* Breadcrumb + Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     {/* Breadcrumb */}
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
@@ -100,9 +100,9 @@ export default function CourseDetailPage({ params }: { params: Promise<{ slug: s
             </div>
 
             {/* Content */}
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-10">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-10">
                 <Tabs defaultValue="overview" className="space-y-8">
-                    <TabsList className="bg-transparent border-b rounded-none p-0 h-auto gap-0 w-full justify-start">
+                    <TabsList className="bg-transparent border-b rounded-none p-0 h-auto gap-0 w-full justify-start overflow-x-auto scrollbar-hide">
                         {[
                             { value: "overview", label: "Overview" },
                             { value: "syllabus", label: "Syllabus" },
@@ -113,7 +113,7 @@ export default function CourseDetailPage({ params }: { params: Promise<{ slug: s
                             <TabsTrigger
                                 key={tab.value}
                                 value={tab.value}
-                                className="relative rounded-none border-b-2 border-transparent px-5 pb-3 pt-2 text-[13px] font-medium text-muted-foreground data-[state=active]:text-foreground data-[state=active]:border-b-crimson data-[state=active]:shadow-none bg-transparent hover:text-foreground transition-colors"
+                                className="relative rounded-none border-b-2 border-transparent px-3 sm:px-5 pb-3 pt-2 text-[12px] sm:text-[13px] font-medium text-muted-foreground data-[state=active]:text-foreground data-[state=active]:border-b-crimson data-[state=active]:shadow-none bg-transparent hover:text-foreground transition-colors whitespace-nowrap shrink-0"
                             >
                                 {tab.label}
                             </TabsTrigger>
@@ -210,7 +210,7 @@ export default function CourseDetailPage({ params }: { params: Promise<{ slug: s
                                             </div>
                                         </AccordionTrigger>
                                         <AccordionContent className="bg-muted/20 px-5 pb-5 pt-2 border-t">
-                                            <div className="ml-14 space-y-4">
+                                            <div className="sm:ml-14 space-y-4">
                                                 <div>
                                                     <h4 className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider mb-2">Readings</h4>
                                                     <ul className="space-y-1.5">{w.readings.map((r, i) => <li key={i} className="text-sm text-muted-foreground flex items-start gap-2"><BookOpen className="h-3.5 w-3.5 mt-0.5 shrink-0 text-teal" />{r}</li>)}</ul>

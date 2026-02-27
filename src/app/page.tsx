@@ -29,7 +29,7 @@ export default function HomePage() {
       <section className="relative bg-navy text-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(24,131,138,0.15),transparent_60%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(163,31,52,0.08),transparent_60%)]" />
-        <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10 py-20 lg:py-28">
+        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-14 sm:py-20 lg:py-28">
           <div className="max-w-3xl">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <div className="flex items-center gap-2 mb-6">
@@ -75,13 +75,13 @@ export default function HomePage() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-16"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-10 sm:mt-16"
           >
             {stats.map((s) => (
               <motion.div key={s.label} variants={item}>
-                <div className="bg-white/[0.06] border border-white/10 rounded-lg px-5 py-5 backdrop-blur-sm">
+                <div className="bg-white/[0.06] border border-white/10 rounded-lg px-3 sm:px-5 py-4 sm:py-5 backdrop-blur-sm">
                   <s.icon className="h-5 w-5 text-teal-light mb-3 opacity-80" />
-                  <div className="text-3xl font-bold tracking-tight">{s.value}</div>
+                  <div className="text-2xl sm:text-3xl font-bold tracking-tight">{s.value}</div>
                   <div className="text-sm font-medium text-white/80 mt-0.5">{s.label}</div>
                   <div className="text-[11px] text-white/40 mt-0.5">{s.desc}</div>
                 </div>
@@ -93,8 +93,8 @@ export default function HomePage() {
 
       {/* Quick Access */}
       <section className="border-b">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-5">
-          <div className="flex items-center gap-6 text-[13px] overflow-x-auto">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-5">
+          <div className="flex items-center gap-4 sm:gap-6 text-[13px] overflow-x-auto scrollbar-hide">
             <span className="text-muted-foreground shrink-0 font-medium">Quick Access:</span>
             {[
               { label: "Browse All Courses", href: "/courses", icon: BookOpen },
@@ -113,7 +113,7 @@ export default function HomePage() {
 
       {/* Programs */}
       <section className="py-16 lg:py-20">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
           <div className="flex items-end justify-between mb-10">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -162,7 +162,7 @@ export default function HomePage() {
 
       {/* Featured Courses */}
       <section className="py-16 lg:py-20 bg-slate-50 dark:bg-[#0e1829] border-y">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
           <div className="flex items-end justify-between mb-10">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -221,7 +221,7 @@ export default function HomePage() {
 
       {/* Mission statement */}
       <section className="py-16 lg:py-20">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
           <div className="max-w-3xl mx-auto text-center">
             <GraduationCap className="h-8 w-8 mx-auto mb-4 text-muted-foreground/50" />
             <h2 className="text-2xl lg:text-3xl font-bold tracking-tight">Open Access to Academic Excellence</h2>
@@ -230,7 +230,7 @@ export default function HomePage() {
               and faculty expertise from across the institution. Our mission is to advance education
               through transparent knowledge sharing and curriculum accessibility.
             </p>
-            <div className="flex items-center justify-center gap-6 mt-8 text-sm text-muted-foreground">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-teal" />
                 <span>Open Access</span>

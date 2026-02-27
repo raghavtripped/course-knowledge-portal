@@ -36,13 +36,13 @@ export default function AdminPreviewPage() {
         <PageTransition>
             {/* Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
                         <span className="text-foreground font-medium">Admin Preview</span>
                     </nav>
-                    <div className="flex items-start justify-between">
+                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                         <div>
                             <div className="flex items-center gap-2 mb-2">
                                 <div className="h-px w-6 bg-crimson" />
@@ -59,9 +59,9 @@ export default function AdminPreviewPage() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8">
                 {/* Quick Actions */}
-                <div className="flex gap-3 mb-8">
+                <div className="flex flex-wrap gap-3 mb-8">
                     <Dialog open={uploadOpen} onOpenChange={setUploadOpen}>
                         <DialogTrigger asChild><Button className="bg-navy hover:bg-navy-light"><Upload className="mr-2 h-4 w-4" /> Upload New Course</Button></DialogTrigger>
                         <DialogContent>
@@ -112,7 +112,7 @@ export default function AdminPreviewPage() {
                                     <BarChart data={analytics.mostViewedCourses} layout="vertical" margin={{ left: 10 }}>
                                         <CartesianGrid strokeDasharray="3 3" opacity={0.2} />
                                         <XAxis type="number" tick={{ fontSize: 11 }} />
-                                        <YAxis type="category" dataKey="title" width={160} tick={{ fontSize: 11 }} />
+                                        <YAxis type="category" dataKey="title" width={120} tick={{ fontSize: 10 }} />
                                         <Tooltip />
                                         <Bar dataKey="views" radius={[0, 4, 4, 0]}>
                                             {analytics.mostViewedCourses.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}

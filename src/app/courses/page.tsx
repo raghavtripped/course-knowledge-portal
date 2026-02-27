@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { motion } from "framer-motion"
-import { Search, ChevronRight, BookOpen, Filter } from "lucide-react"
+import { Search, ChevronRight, BookOpen, Filter, ChevronDown } from "lucide-react"
 import courses from "@/data/courses.json"
 import programs from "@/data/programs.json"
 import skills from "@/data/skills.json"
@@ -21,6 +21,7 @@ export default function CoursesPage() {
     const [filterProgram, setFilterProgram] = useState("")
     const [filterType, setFilterType] = useState("")
     const [filterSkill, setFilterSkill] = useState("")
+    const [filtersOpen, setFiltersOpen] = useState(false)
 
     const filtered = courses.filter((c) => {
         if (search && !c.title.toLowerCase().includes(search.toLowerCase()) && !c.code.toLowerCase().includes(search.toLowerCase())) return false
@@ -34,7 +35,7 @@ export default function CoursesPage() {
         <PageTransition>
             {/* Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
@@ -49,7 +50,7 @@ export default function CoursesPage() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8">
                 {/* Search bar */}
                 <div className="relative max-w-xl mb-8">
                     <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -64,12 +65,21 @@ export default function CoursesPage() {
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Filter sidebar */}
                     <aside className="lg:w-56 shrink-0">
-                        <div className="flex items-center gap-2 mb-4">
-                            <Filter className="h-4 w-4 text-muted-foreground" />
-                            <h3 className="text-sm font-semibold">Filters</h3>
-                        </div>
+                        <button
+                            onClick={() => setFiltersOpen(!filtersOpen)}
+                            className="flex items-center justify-between w-full lg:cursor-default mb-4"
+                        >
+                            <div className="flex items-center gap-2">
+                                <Filter className="h-4 w-4 text-muted-foreground" />
+                                <h3 className="text-sm font-semibold">Filters</h3>
+                                {(filterProgram || filterType || filterSkill) && (
+                                    <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-crimson text-white font-medium">Active</span>
+                                )}
+                            </div>
+                            <ChevronDown className={`h-4 w-4 text-muted-foreground lg:hidden transition-transform ${filtersOpen ? "rotate-180" : ""}`} />
+                        </button>
 
-                        <div className="space-y-6">
+                        <div className={`space-y-6 ${filtersOpen ? "block" : "hidden"} lg:block`}>
                             <div>
                                 <h4 className="text-[11px] uppercase tracking-wider font-semibold text-muted-foreground mb-2">Program</h4>
                                 <div className="space-y-1">
@@ -78,8 +88,8 @@ export default function CoursesPage() {
                                             key={p.id}
                                             onClick={() => setFilterProgram(filterProgram === p.id ? "" : p.id)}
                                             className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${filterProgram === p.id
-                                                    ? "bg-navy text-white font-medium"
-                                                    : "hover:bg-muted text-muted-foreground hover:text-foreground"
+                                                ? "bg-navy text-white font-medium"
+                                                : "hover:bg-muted text-muted-foreground hover:text-foreground"
                                                 }`}
                                         >
                                             {p.shortName}
@@ -98,8 +108,8 @@ export default function CoursesPage() {
                                             key={t}
                                             onClick={() => setFilterType(filterType === t ? "" : t)}
                                             className={`w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${filterType === t
-                                                    ? "bg-navy text-white font-medium"
-                                                    : "hover:bg-muted text-muted-foreground hover:text-foreground"
+                                                ? "bg-navy text-white font-medium"
+                                                : "hover:bg-muted text-muted-foreground hover:text-foreground"
                                                 }`}
                                         >
                                             {t}
@@ -118,8 +128,8 @@ export default function CoursesPage() {
                                             key={s}
                                             onClick={() => setFilterSkill(filterSkill === s ? "" : s)}
                                             className={`text-[10px] px-2.5 py-1 rounded-full transition-colors font-medium ${filterSkill === s
-                                                    ? "bg-navy text-white"
-                                                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                                                ? "bg-navy text-white"
+                                                : "bg-muted text-muted-foreground hover:bg-muted/80"
                                                 }`}
                                         >
                                             {s.replace(/-/g, " ")}
@@ -148,14 +158,14 @@ export default function CoursesPage() {
                                     <Link href={`/courses/${c.slug}`} className="group block">
                                         <div className="border rounded-lg p-5 hover:shadow-md hover:border-border/80 transition-all">
                                             <div className="flex items-start justify-between">
-                                                <div className="flex-1">
-                                                    <div className="flex items-center gap-2 text-[11px] text-muted-foreground mb-1.5">
+                                                <div className="flex-1 min-w-0">
+                                                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-muted-foreground mb-1.5">
                                                         <span className="font-mono font-medium text-foreground/60">{c.code}</span>
-                                                        <span className="w-px h-3 bg-border" />
+                                                        <span className="hidden sm:block w-px h-3 bg-border" />
                                                         <span>{c.credits} Credits</span>
-                                                        <span className="w-px h-3 bg-border" />
+                                                        <span className="hidden sm:block w-px h-3 bg-border" />
                                                         <span>{c.type}</span>
-                                                        <span className="w-px h-3 bg-border" />
+                                                        <span className="hidden sm:block w-px h-3 bg-border" />
                                                         <span>{c.year}</span>
                                                     </div>
                                                     <h3 className="text-[15px] font-semibold group-hover:text-crimson transition-colors">{c.title}</h3>

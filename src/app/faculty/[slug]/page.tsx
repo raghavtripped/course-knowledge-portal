@@ -16,7 +16,7 @@ export default function FacultyDetailPage({ params }: { params: Promise<{ slug: 
         <PageTransition>
             {/* Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
@@ -25,23 +25,23 @@ export default function FacultyDetailPage({ params }: { params: Promise<{ slug: 
                         <span className="text-foreground font-medium">{member.name}</span>
                     </nav>
 
-                    <div className="flex items-start gap-6">
-                        <div className="w-20 h-20 rounded-full bg-navy text-white flex items-center justify-center text-2xl font-bold shrink-0">
+                    <div className="flex items-start gap-4 sm:gap-6">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-navy text-white flex items-center justify-center text-xl sm:text-2xl font-bold shrink-0">
                             {member.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
                         </div>
-                        <div>
-                            <h1 className="text-3xl font-bold tracking-tight">{member.name}</h1>
+                        <div className="min-w-0">
+                            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">{member.name}</h1>
                             <p className="text-muted-foreground mt-1">{member.department}</p>
-                            <div className="flex items-center gap-4 mt-3 text-sm text-muted-foreground">
-                                <span className="flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" /> {member.email}</span>
-                                <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {member.officeHours}</span>
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 mt-2 sm:mt-3 text-sm text-muted-foreground">
+                                <span className="flex items-center gap-1.5 truncate"><Mail className="h-3.5 w-3.5 shrink-0" /> <span className="truncate">{member.email}</span></span>
+                                <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5 shrink-0" /> {member.officeHours}</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-10 lg:py-14">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-14">
                 <div className="grid lg:grid-cols-3 gap-10">
                     {/* Main content */}
                     <div className="lg:col-span-2 space-y-10">

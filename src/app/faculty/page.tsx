@@ -25,7 +25,7 @@ export default function FacultyPage() {
         <PageTransition>
             {/* Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
@@ -40,13 +40,13 @@ export default function FacultyPage() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8">
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <div className="relative flex-1 max-w-md">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                         <Input placeholder="Search faculty..." value={search} onChange={(e) => setSearch(e.target.value)} className="pl-10 h-10 text-sm" />
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                         <button onClick={() => setDept("")} className={`text-xs px-3 py-1.5 rounded-md transition-colors ${!dept ? "bg-navy text-white" : "bg-muted hover:bg-muted/80 text-muted-foreground"}`}>All</button>
                         {departments.map((d) => (
                             <button key={d} onClick={() => setDept(dept === d ? "" : d)} className={`text-xs px-3 py-1.5 rounded-md transition-colors ${dept === d ? "bg-navy text-white" : "bg-muted hover:bg-muted/80 text-muted-foreground"}`}>{d}</button>
@@ -58,8 +58,8 @@ export default function FacultyPage() {
                     {filtered.map((f) => (
                         <motion.div key={f.id} variants={item}>
                             <Link href={`/faculty/${f.slug}`} className="group block">
-                                <div className="flex items-start gap-5 p-5 border rounded-lg hover:shadow-md transition-all">
-                                    <div className="w-14 h-14 rounded-full bg-navy text-white flex items-center justify-center text-lg font-bold shrink-0">
+                                <div className="flex items-start gap-4 p-4 sm:p-5 border rounded-lg hover:shadow-md transition-all">
+                                    <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-navy text-white flex items-center justify-center text-base sm:text-lg font-bold shrink-0">
                                         {f.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
                                     </div>
                                     <div className="flex-1 min-w-0">

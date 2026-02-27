@@ -14,7 +14,7 @@ export default function ProgramsPage() {
         <PageTransition>
             {/* Header */}
             <div className="border-b bg-slate-50 dark:bg-[#0e1829]">
-                <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-8 lg:py-10">
+                <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-6 sm:py-8 lg:py-10">
                     <nav className="flex items-center gap-1.5 text-[12px] text-muted-foreground mb-6">
                         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
                         <ChevronRight className="h-3 w-3" />
@@ -29,15 +29,15 @@ export default function ProgramsPage() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1400px] px-6 lg:px-10 py-10 lg:py-14">
+            <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-14">
                 <motion.div variants={container} initial="hidden" animate="show" className="space-y-6">
                     {programs.map((p) => (
                         <motion.div key={p.id} variants={item}>
                             <Link href={`/programs/${p.slug}`} className="group block">
                                 <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300">
-                                    <div className="flex flex-col lg:flex-row">
+                                    <div className="flex flex-col sm:flex-row">
                                         {/* Left panel */}
-                                        <div className="lg:w-64 bg-navy text-white p-6 lg:p-8 flex flex-col justify-between shrink-0">
+                                        <div className="sm:w-64 bg-navy text-white p-5 sm:p-6 lg:p-8 flex flex-col justify-between shrink-0">
                                             <div>
                                                 <span className="text-[10px] uppercase tracking-[0.15em] text-white/50 font-medium">{p.duration}</span>
                                                 <h2 className="text-3xl font-bold mt-1">{p.shortName}</h2>
@@ -48,7 +48,7 @@ export default function ProgramsPage() {
                                             </div>
                                         </div>
                                         {/* Right content */}
-                                        <div className="flex-1 p-6 lg:p-8 bg-card">
+                                        <div className="flex-1 p-5 sm:p-6 lg:p-8 bg-card">
                                             <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
                                             <div className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t">
                                                 <div>
