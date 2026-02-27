@@ -1,0 +1,113 @@
+[
+  {
+    "id": "ipm",
+    "name": "Integrated Programme in Management",
+    "shortName": "IPM",
+    "slug": "ipm",
+    "duration": "5 Years",
+    "totalCredits": 240,
+    "description": "A five-year integrated programme designed for students who have completed their higher secondary education. The programme combines undergraduate and postgraduate studies in management, providing a holistic foundation in business and leadership. Students gain exposure to liberal arts, social sciences, and core management disciplines before specializing in their areas of interest.",
+    "overview": "The IPM is designed to nurture future business leaders from an early stage. The first two years focus on foundational courses in humanities, mathematics, economics, and communication. Years 3–5 transition into core management disciplines including finance, marketing, operations, and strategy. Students undertake summer internships and a capstone project.",
+    "totalCourses": 32,
+    "terms": 10,
+    "courseIds": ["micro-econ", "macro-econ", "financial-accounting", "corporate-finance", "marketing-mgmt", "ops-mgmt", "ob-hrm", "business-stats", "data-viz", "entrepreneurship", "business-comm", "legal-aspects"],
+    "facultyIds": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8"],
+    "termStructure": [
+      { "term": "Term 1", "label": "Foundations I", "courses": ["micro-econ", "business-stats", "business-comm"] },
+      { "term": "Term 2", "label": "Foundations II", "courses": ["macro-econ", "financial-accounting", "legal-aspects"] },
+      { "term": "Term 3", "label": "Core Management I", "courses": ["marketing-mgmt", "ob-hrm"] },
+      { "term": "Term 4", "label": "Core Management II", "courses": ["ops-mgmt", "corporate-finance"] },
+      { "term": "Term 5", "label": "Analytics & Electives", "courses": ["data-viz", "entrepreneurship"] }
+    ],
+    "skillDistribution": [
+      { "skill": "Quantitative Analysis", "percentage": 25 },
+      { "skill": "Leadership", "percentage": 20 },
+      { "skill": "Communication", "percentage": 15 },
+      { "skill": "Financial Literacy", "percentage": 20 },
+      { "skill": "Strategic Thinking", "percentage": 20 }
+    ]
+  },
+  {
+    "id": "pgp",
+    "name": "Post Graduate Programme in Management",
+    "shortName": "PGP",
+    "slug": "pgp",
+    "duration": "2 Years",
+    "totalCredits": 120,
+    "description": "The flagship two-year, full-time residential MBA programme. Ranked among the top management programmes globally, the PGP emphasizes analytical rigor, experiential learning, and global exposure. The curriculum blends core courses with a wide range of electives, live projects, and exchange programmes with leading international business schools.",
+    "overview": "The PGP curriculum is structured across six terms. Terms 1–3 cover core courses in finance, marketing, operations, strategy, and analytics. Terms 4–6 offer over 100 elective courses across specializations. Students complete a Summer Internship Programme (SIP) and an Independent Study Project (ISP).",
+    "totalCourses": 45,
+    "terms": 6,
+    "courseIds": ["financial-accounting", "corporate-finance", "micro-econ", "marketing-mgmt", "ops-mgmt", "strategy", "ml-business", "behavioral-econ", "data-viz", "corporate-gov", "entrepreneurship", "ob-hrm", "business-stats", "supply-chain", "investment-mgmt", "digital-marketing", "negotiation", "managerial-econ", "business-ethics", "fintech"],
+    "facultyIds": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15"],
+    "termStructure": [
+      { "term": "Term 1", "label": "Core Foundations", "courses": ["financial-accounting", "micro-econ", "business-stats", "ob-hrm", "business-comm"] },
+      { "term": "Term 2", "label": "Core Management", "courses": ["corporate-finance", "marketing-mgmt", "ops-mgmt", "managerial-econ"] },
+      { "term": "Term 3", "label": "Core Strategy & Analytics", "courses": ["strategy", "data-viz", "legal-aspects", "business-ethics"] },
+      { "term": "Term 4", "label": "Electives I", "courses": ["ml-business", "behavioral-econ", "digital-marketing"] },
+      { "term": "Term 5", "label": "Electives II", "courses": ["investment-mgmt", "corporate-gov", "fintech"] },
+      { "term": "Term 6", "label": "Electives III & Capstone", "courses": ["entrepreneurship", "negotiation", "supply-chain"] }
+    ],
+    "skillDistribution": [
+      { "skill": "Quantitative Analysis", "percentage": 30 },
+      { "skill": "Leadership", "percentage": 15 },
+      { "skill": "Communication", "percentage": 10 },
+      { "skill": "Financial Literacy", "percentage": 25 },
+      { "skill": "Strategic Thinking", "percentage": 20 }
+    ]
+  },
+  {
+    "id": "epgp",
+    "name": "Executive Post Graduate Programme",
+    "shortName": "EPGP",
+    "slug": "epgp",
+    "duration": "1 Year",
+    "totalCredits": 60,
+    "description": "An intensive one-year, full-time residential programme designed for experienced professionals seeking to accelerate their careers. The EPGP combines rigorous academics with real-world application, featuring modules delivered by both resident faculty and international visiting professors. The programme emphasizes executive-level decision making, global business strategy, and leadership development.",
+    "overview": "Designed for professionals with 5+ years of experience, the EPGP compresses a world-class MBA into 12 months. The curriculum features intensive modules, global immersion trips, C-suite speaker sessions, and a consulting project with industry partners.",
+    "totalCourses": 18,
+    "terms": 4,
+    "courseIds": ["corporate-finance", "strategy", "ops-mgmt", "marketing-mgmt", "ml-business", "corporate-gov", "negotiation", "entrepreneurship", "business-ethics", "fintech"],
+    "facultyIds": ["f1", "f3", "f5", "f7", "f9", "f11", "f13"],
+    "termStructure": [
+      { "term": "Term 1", "label": "Executive Foundations", "courses": ["financial-accounting", "ops-mgmt", "marketing-mgmt"] },
+      { "term": "Term 2", "label": "Strategic Management", "courses": ["strategy", "corporate-finance", "corporate-gov"] },
+      { "term": "Term 3", "label": "Innovation & Technology", "courses": ["ml-business", "fintech", "entrepreneurship"] },
+      { "term": "Term 4", "label": "Leadership Capstone", "courses": ["negotiation", "business-ethics"] }
+    ],
+    "skillDistribution": [
+      { "skill": "Quantitative Analysis", "percentage": 15 },
+      { "skill": "Leadership", "percentage": 30 },
+      { "skill": "Communication", "percentage": 15 },
+      { "skill": "Financial Literacy", "percentage": 20 },
+      { "skill": "Strategic Thinking", "percentage": 20 }
+    ]
+  },
+  {
+    "id": "fpm",
+    "name": "Fellow Programme in Management",
+    "shortName": "FPM",
+    "slug": "fpm",
+    "duration": "4–5 Years",
+    "totalCredits": 180,
+    "description": "The doctoral-level programme equivalent to a PhD in management. The FPM develops scholars capable of conducting cutting-edge research and contributing to management theory and practice. Fellows work closely with faculty advisors on original research across areas such as finance, marketing, economics, organizational behavior, information systems, and public policy.",
+    "overview": "The FPM begins with two years of rigorous coursework in research methodology, advanced statistics, and area-specific seminars. Years 3–5 focus on dissertation research. Fellows present at international conferences and publish in top-tier academic journals.",
+    "totalCourses": 20,
+    "terms": 8,
+    "courseIds": ["micro-econ", "macro-econ", "business-stats", "behavioral-econ", "ml-business", "managerial-econ", "data-viz"],
+    "facultyIds": ["f2", "f4", "f6", "f8", "f10", "f12", "f14"],
+    "termStructure": [
+      { "term": "Term 1", "label": "Research Methods I", "courses": ["business-stats", "micro-econ"] },
+      { "term": "Term 2", "label": "Research Methods II", "courses": ["macro-econ", "managerial-econ"] },
+      { "term": "Term 3", "label": "Area Seminars", "courses": ["behavioral-econ", "ml-business"] },
+      { "term": "Term 4", "label": "Dissertation Preparation", "courses": ["data-viz"] }
+    ],
+    "skillDistribution": [
+      { "skill": "Quantitative Analysis", "percentage": 35 },
+      { "skill": "Research Design", "percentage": 25 },
+      { "skill": "Communication", "percentage": 10 },
+      { "skill": "Financial Literacy", "percentage": 10 },
+      { "skill": "Strategic Thinking", "percentage": 20 }
+    ]
+  }
+]

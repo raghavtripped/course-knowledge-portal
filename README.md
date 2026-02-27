@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Institutional Knowledge Portal
 
-## Getting Started
+A production-grade frontend MVP for a university-wide Course Knowledge Portal. Built with **Next.js 16**, **TypeScript**, **Tailwind CSS**, **ShadCN UI**, **Recharts**, and **Framer Motion**.
 
-First, run the development server:
+> Designed for presentation to college administrators. All data is mocked — no backend required.
+
+## Quick Start
 
 ```bash
+cd course-portal
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Route | Description |
+|---|---|
+| `/` | Landing page with hero, stats, featured programs & courses |
+| `/programs` | Program grid (IPM, PGP, EPGP, FPM) |
+| `/programs/[slug]` | Curriculum timeline, skill distribution chart, faculty |
+| `/courses` | Filterable course catalog (program, type, skill, search) |
+| `/courses/[slug]` | 5-tab course detail: Overview, Syllabus, Assignments, Exams, Insights |
+| `/faculty` | Faculty directory grid |
+| `/faculty/[slug]` | Bio, courses, publications, teaching philosophy |
+| `/skills` | Interactive skill map with drill-down detail panel |
+| `/admin-preview` | Admin dashboard with charts, upload/edit modals |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Data Architecture
 
-## Learn More
+All data lives in `src/data/` as static JSON with relational IDs:
 
-To learn more about Next.js, take a look at the following resources:
+- **programs.json** — 4 programs with term structures, skill distributions
+- **courses.json** — 23 courses with syllabi, assignments, exams, instructor insights
+- **faculty.json** — 15 faculty with bios, publications, research areas
+- **skills.json** — 18 skills linked to courses and programs
+- **analytics.json** — Mock admin analytics (views, downloads, enrollment)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx            # Landing page
+│   ├── layout.tsx          # Root layout (navbar + footer)
+│   ├── programs/           # Programs index + [slug] detail
+│   ├── courses/            # Courses index + [slug] detail (5 tabs)
+│   ├── faculty/            # Faculty index + [slug] detail
+│   ├── skills/             # Interactive skill map
+│   └── admin-preview/      # Admin simulation dashboard
+├── components/
+│   ├── layout/             # Navbar, Footer, ThemeProvider
+│   ├── shared/             # PageTransition
+│   └── ui/                 # ShadCN components
+├── data/                   # Static JSON data files
+└── lib/                    # Utilities
+```
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🌓 **Dark/light mode** toggle with persistent theme
+- 📱 **Fully responsive** — mobile drawer nav, responsive grids
+- 📊 **Recharts** — Skill distribution, grade distribution, analytics charts
+- 🎬 **Framer Motion** — Page transitions, staggered card animations
+- 🏷️ **Filter sidebar** — Multi-faceted course filtering
+- 📚 **Tabbed course detail** — Overview, 10-week syllabus, assignments with rubrics, exam archives with grade charts, instructor insights
+- 🗺️ **Interactive skill map** — Clustered by category with drill-down
+- 📈 **Admin dashboard** — Bar charts, line charts, enrollment heatmap
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Future Backend Integration
+
+1. Replace static JSON imports with API calls (`fetch` / SWR / React Query)
+2. Add NextAuth.js for role-based access (student, faculty, admin)
+3. Connect course uploads and syllabus edits to a CMS or database
+4. Integrate full-text search with Elasticsearch or Algolia
+5. Add real analytics tracking and user activity logging
+
+## Scalability Roadmap
+
+- **Phase 1**: Connect to PostgreSQL + Prisma ORM for dynamic data
+- **Phase 2**: Implement LMS features (assignment submission, grading)
+- **Phase 3**: Add real-time collaboration (discussion forums, annotations)
+- **Phase 4**: Knowledge graph with Neo4j for course/skill relationships
+- **Phase 5**: AI-powered course recommendations and learning paths

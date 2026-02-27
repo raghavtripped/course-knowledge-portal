@@ -1,0 +1,371 @@
+[
+  {
+    "id": "financial-analysis",
+    "name": "Financial Analysis",
+    "category": "Finance",
+    "description": "Ability to analyze financial statements, perform valuation, and make investment decisions.",
+    "courseIds": [
+      "financial-accounting",
+      "corporate-finance",
+      "investment-mgmt",
+      "fintech"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "epgp"
+    ],
+    "relatedSkills": [
+      "valuation",
+      "accounting",
+      "quantitative-analysis"
+    ]
+  },
+  {
+    "id": "valuation",
+    "name": "Valuation & Modeling",
+    "category": "Finance",
+    "description": "Expertise in company valuation using DCF, multiples, and advanced modeling techniques.",
+    "courseIds": [
+      "corporate-finance",
+      "investment-mgmt"
+    ],
+    "programIds": [
+      "pgp",
+      "epgp"
+    ],
+    "relatedSkills": [
+      "financial-analysis",
+      "quantitative-analysis"
+    ]
+  },
+  {
+    "id": "accounting",
+    "name": "Accounting",
+    "category": "Finance",
+    "description": "Understanding of financial reporting standards, bookkeeping, and accounting principles.",
+    "courseIds": [
+      "financial-accounting"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm"
+    ],
+    "relatedSkills": [
+      "financial-analysis",
+      "reporting"
+    ]
+  },
+  {
+    "id": "reporting",
+    "name": "Financial Reporting",
+    "category": "Finance",
+    "description": "Skills in preparing and interpreting financial reports following GAAP/IFRS standards.",
+    "courseIds": [
+      "financial-accounting"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm"
+    ],
+    "relatedSkills": [
+      "accounting",
+      "financial-analysis"
+    ]
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "category": "Analytics",
+    "description": "Understanding of micro and macroeconomic principles and their business applications.",
+    "courseIds": [
+      "micro-econ",
+      "macro-econ",
+      "behavioral-econ",
+      "managerial-econ"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "quantitative-analysis",
+      "policy-analysis",
+      "critical-thinking"
+    ]
+  },
+  {
+    "id": "quantitative-analysis",
+    "name": "Quantitative Analysis",
+    "category": "Analytics",
+    "description": "Proficiency in statistical methods, mathematical modeling, and data-driven decision making.",
+    "courseIds": [
+      "business-stats",
+      "ops-mgmt",
+      "supply-chain",
+      "investment-mgmt",
+      "micro-econ",
+      "managerial-econ"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "data-analytics",
+      "economics",
+      "decision-making"
+    ]
+  },
+  {
+    "id": "data-analytics",
+    "name": "Data Analytics",
+    "category": "Technology",
+    "description": "Skills in data collection, processing, visualization, and deriving business insights.",
+    "courseIds": [
+      "data-viz",
+      "ml-business",
+      "digital-marketing",
+      "business-stats"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "quantitative-analysis",
+      "programming",
+      "machine-learning"
+    ]
+  },
+  {
+    "id": "machine-learning",
+    "name": "Machine Learning",
+    "category": "Technology",
+    "description": "Understanding of ML algorithms and their applications in business contexts.",
+    "courseIds": [
+      "ml-business"
+    ],
+    "programIds": [
+      "pgp",
+      "epgp",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "data-analytics",
+      "programming",
+      "quantitative-analysis"
+    ]
+  },
+  {
+    "id": "programming",
+    "name": "Programming & Tools",
+    "category": "Technology",
+    "description": "Proficiency in Python, R, SQL, and business intelligence tools.",
+    "courseIds": [
+      "data-viz",
+      "ml-business",
+      "fintech"
+    ],
+    "programIds": [
+      "pgp",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "data-analytics",
+      "machine-learning"
+    ]
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing",
+    "category": "Business",
+    "description": "Expertise in market analysis, brand strategy, consumer behavior, and campaign management.",
+    "courseIds": [
+      "marketing-mgmt",
+      "digital-marketing"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "epgp"
+    ],
+    "relatedSkills": [
+      "communication",
+      "strategy",
+      "data-analytics"
+    ]
+  },
+  {
+    "id": "strategy",
+    "name": "Strategic Thinking",
+    "category": "Business",
+    "description": "Ability to analyze competitive landscapes and formulate business strategies.",
+    "courseIds": [
+      "strategy",
+      "corporate-gov",
+      "entrepreneurship"
+    ],
+    "programIds": [
+      "pgp",
+      "epgp"
+    ],
+    "relatedSkills": [
+      "critical-thinking",
+      "leadership",
+      "decision-making"
+    ]
+  },
+  {
+    "id": "operations",
+    "name": "Operations Management",
+    "category": "Business",
+    "description": "Skills in process optimization, supply chain management, and quality improvement.",
+    "courseIds": [
+      "ops-mgmt",
+      "supply-chain"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "epgp"
+    ],
+    "relatedSkills": [
+      "quantitative-analysis",
+      "process-optimization"
+    ]
+  },
+  {
+    "id": "process-optimization",
+    "name": "Process Optimization",
+    "category": "Business",
+    "description": "Expertise in lean methodologies, Six Sigma, and continuous improvement.",
+    "courseIds": [
+      "ops-mgmt",
+      "supply-chain"
+    ],
+    "programIds": [
+      "pgp"
+    ],
+    "relatedSkills": [
+      "operations",
+      "quantitative-analysis"
+    ]
+  },
+  {
+    "id": "leadership",
+    "name": "Leadership",
+    "category": "Management",
+    "description": "Competence in leading teams, driving change, and developing organizational vision.",
+    "courseIds": [
+      "ob-hrm",
+      "strategy",
+      "entrepreneurship",
+      "negotiation",
+      "business-ethics"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "epgp"
+    ],
+    "relatedSkills": [
+      "communication",
+      "critical-thinking",
+      "decision-making"
+    ]
+  },
+  {
+    "id": "communication",
+    "name": "Communication",
+    "category": "Management",
+    "description": "Strong written and verbal communication skills for business contexts.",
+    "courseIds": [
+      "business-comm",
+      "marketing-mgmt",
+      "negotiation",
+      "data-viz",
+      "entrepreneurship"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm"
+    ],
+    "relatedSkills": [
+      "leadership",
+      "marketing"
+    ]
+  },
+  {
+    "id": "critical-thinking",
+    "name": "Critical Thinking",
+    "category": "Management",
+    "description": "Analytical reasoning, problem decomposition, and evidence-based decision making.",
+    "courseIds": [
+      "micro-econ",
+      "behavioral-econ",
+      "strategy",
+      "ob-hrm",
+      "legal-aspects",
+      "business-ethics",
+      "negotiation"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "decision-making",
+      "economics",
+      "quantitative-analysis"
+    ]
+  },
+  {
+    "id": "decision-making",
+    "name": "Decision Making",
+    "category": "Management",
+    "description": "Frameworks for making decisions under uncertainty and complexity.",
+    "courseIds": [
+      "corporate-finance",
+      "behavioral-econ",
+      "managerial-econ",
+      "business-stats",
+      "fintech"
+    ],
+    "programIds": [
+      "pgp",
+      "epgp",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "critical-thinking",
+      "quantitative-analysis",
+      "financial-analysis"
+    ]
+  },
+  {
+    "id": "policy-analysis",
+    "name": "Policy Analysis",
+    "category": "Management",
+    "description": "Understanding of regulatory frameworks, governance, and public policy implications.",
+    "courseIds": [
+      "macro-econ",
+      "corporate-gov",
+      "legal-aspects",
+      "business-ethics"
+    ],
+    "programIds": [
+      "pgp",
+      "ipm",
+      "fpm"
+    ],
+    "relatedSkills": [
+      "critical-thinking",
+      "economics"
+    ]
+  }
+]

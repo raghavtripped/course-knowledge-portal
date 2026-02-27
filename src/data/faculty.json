@@ -1,0 +1,432 @@
+[
+  {
+    "id": "f1",
+    "name": "Dr. Ananya Sharma",
+    "slug": "dr-ananya-sharma",
+    "department": "Finance & Accounting",
+    "researchAreas": [
+      "Corporate Finance",
+      "Valuation",
+      "M&A"
+    ],
+    "bio": "A distinguished scholar with over 20 years of experience in academia and industry consulting. Formerly with Goldman Sachs and McKinsey.",
+    "coursesTeught": [
+      {
+        "id": "financial-accounting",
+        "title": "Financial Accounting",
+        "slug": "financial-accounting"
+      },
+      {
+        "id": "corporate-finance",
+        "title": "Corporate Finance",
+        "slug": "corporate-finance"
+      }
+    ],
+    "teachingPhilosophy": "I believe in connecting theory with practice through real-world case studies and live projects.",
+    "publications": [
+      "\"Impact of Digital Disruption on Emerging Markets,\" Journal of Finance & Accounting, 2024",
+      "\"Valuation in Uncertain Times,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Monday & Wednesday, 9:00 AM – 11:00 AM",
+    "email": "sharma@institution.edu"
+  },
+  {
+    "id": "f2",
+    "name": "Dr. Rajesh Krishnan",
+    "slug": "dr-rajesh-krishnan",
+    "department": "Economics",
+    "researchAreas": [
+      "Microeconomic Theory",
+      "Game Theory",
+      "Behavioral Economics"
+    ],
+    "bio": "An acclaimed economist whose research has been published in top-tier journals including American Economic Review and Econometrica.",
+    "coursesTeught": [
+      {
+        "id": "micro-econ",
+        "title": "Microeconomics",
+        "slug": "microeconomics"
+      },
+      {
+        "id": "behavioral-econ",
+        "title": "Behavioral Economics",
+        "slug": "behavioral-economics"
+      },
+      {
+        "id": "managerial-econ",
+        "title": "Managerial Economics",
+        "slug": "managerial-economics"
+      }
+    ],
+    "teachingPhilosophy": "My teaching approach emphasizes critical thinking and rigorous quantitative analysis.",
+    "publications": [
+      "\"Game Theory Applications in Modern Business,\" Journal of Economics, 2024",
+      "\"Behavioral Nudges in Policy,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Tuesday & Thursday, 10:00 AM – 12:00 AM",
+    "email": "krishnan@institution.edu"
+  },
+  {
+    "id": "f3",
+    "name": "Prof. Meera Iyer",
+    "slug": "prof-meera-iyer",
+    "department": "Marketing",
+    "researchAreas": [
+      "Consumer Behavior",
+      "Brand Strategy",
+      "Digital Marketing"
+    ],
+    "bio": "Award-winning marketing professor who has consulted for leading FMCG and technology companies across Asia and Europe.",
+    "coursesTeught": [
+      {
+        "id": "marketing-mgmt",
+        "title": "Marketing Management",
+        "slug": "marketing-management"
+      }
+    ],
+    "teachingPhilosophy": "I use experiential learning methods including simulations, role-plays, and industry collaborations.",
+    "publications": [
+      "\"The Future of Consumer Engagement,\" Journal of Marketing, 2024",
+      "\"Sustainable Marketing Practices,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Wednesday & Friday, 11:00 AM – 13:00 AM",
+    "email": "iyer@institution.edu"
+  },
+  {
+    "id": "f4",
+    "name": "Dr. Siddharth Patel",
+    "slug": "dr-siddharth-patel",
+    "department": "Operations Management",
+    "researchAreas": [
+      "Supply Chain",
+      "Lean Manufacturing",
+      "Process Optimization"
+    ],
+    "bio": "Expert in lean operations with extensive consulting experience for automotive and manufacturing firms globally.",
+    "coursesTeught": [
+      {
+        "id": "ops-mgmt",
+        "title": "Operations Management",
+        "slug": "operations-management"
+      }
+    ],
+    "teachingPhilosophy": "Learning happens best when students engage with real problems — I bring the industry into the classroom.",
+    "publications": [
+      "\"Lean Thinking in Service Industries,\" Journal of Operations Management, 2024",
+      "\"Industry 4.0 and Smart Manufacturing,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Thursday & Monday, 9:00 AM – 11:00 AM",
+    "email": "patel@institution.edu"
+  },
+  {
+    "id": "f5",
+    "name": "Prof. Kavita Deshmukh",
+    "slug": "prof-kavita-deshmukh",
+    "department": "Organizational Behavior",
+    "researchAreas": [
+      "Leadership",
+      "Team Dynamics",
+      "Organizational Culture"
+    ],
+    "bio": "Renowned for pioneering research in organizational culture transformation in emerging market enterprises.",
+    "coursesTeught": [
+      {
+        "id": "ob-hrm",
+        "title": "Organizational Behavior & HRM",
+        "slug": "organizational-behavior"
+      }
+    ],
+    "teachingPhilosophy": "I focus on developing both analytical skills and emotional intelligence in future leaders.",
+    "publications": [
+      "\"Building Resilient Organizations,\" Journal of Organizational Behavior, 2024",
+      "\"Cross-Cultural Leadership,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Friday & Tuesday, 10:00 AM – 12:00 AM",
+    "email": "deshmukh@institution.edu"
+  },
+  {
+    "id": "f6",
+    "name": "Dr. Arjun Nair",
+    "slug": "dr-arjun-nair",
+    "department": "Information Systems",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Analytics",
+      "Business Intelligence"
+    ],
+    "bio": "Leading researcher in machine learning applications for business, with patents in predictive analytics systems.",
+    "coursesTeught": [
+      {
+        "id": "ml-business",
+        "title": "Machine Learning for Business",
+        "slug": "machine-learning-for-business"
+      },
+      {
+        "id": "data-viz",
+        "title": "Data Visualization & Business Analytics",
+        "slug": "data-visualization"
+      }
+    ],
+    "teachingPhilosophy": "I believe in connecting theory with practice through real-world case studies and live projects.",
+    "publications": [
+      "\"Impact of Digital Disruption on Emerging Markets,\" Journal of Information Systems, 2024",
+      "\"Valuation in Uncertain Times,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Monday & Wednesday, 11:00 AM – 13:00 AM",
+    "email": "nair@institution.edu"
+  },
+  {
+    "id": "f7",
+    "name": "Prof. Priya Venkatesh",
+    "slug": "prof-priya-venkatesh",
+    "department": "Strategy",
+    "researchAreas": [
+      "Competitive Strategy",
+      "Innovation",
+      "Blue Ocean Strategy"
+    ],
+    "bio": "Former strategy consultant at BCG with expertise in competitive dynamics in digital platform markets.",
+    "coursesTeught": [
+      {
+        "id": "strategy",
+        "title": "Strategic Management",
+        "slug": "strategic-management"
+      },
+      {
+        "id": "entrepreneurship",
+        "title": "Entrepreneurship & New Venture Creation",
+        "slug": "entrepreneurship"
+      }
+    ],
+    "teachingPhilosophy": "My teaching approach emphasizes critical thinking and rigorous quantitative analysis.",
+    "publications": [
+      "\"Game Theory Applications in Modern Business,\" Journal of Strategy, 2024",
+      "\"Behavioral Nudges in Policy,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Tuesday & Thursday, 9:00 AM – 11:00 AM",
+    "email": "venkatesh@institution.edu"
+  },
+  {
+    "id": "f8",
+    "name": "Dr. Vikram Malhotra",
+    "slug": "dr-vikram-malhotra",
+    "department": "Public Policy",
+    "researchAreas": [
+      "Governance",
+      "Regulation",
+      "Economic Policy"
+    ],
+    "bio": "Expert in public policy and governance, having advised multiple government bodies on economic regulation.",
+    "coursesTeught": [
+      {
+        "id": "legal-aspects",
+        "title": "Legal Aspects of Business",
+        "slug": "legal-aspects"
+      }
+    ],
+    "teachingPhilosophy": "I use experiential learning methods including simulations, role-plays, and industry collaborations.",
+    "publications": [
+      "\"The Future of Consumer Engagement,\" Journal of Public Policy, 2024",
+      "\"Sustainable Marketing Practices,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Wednesday & Friday, 10:00 AM – 12:00 AM",
+    "email": "malhotra@institution.edu"
+  },
+  {
+    "id": "f9",
+    "name": "Prof. Sunita Agarwal",
+    "slug": "prof-sunita-agarwal",
+    "department": "Finance & Accounting",
+    "researchAreas": [
+      "Investment Banking",
+      "Portfolio Theory",
+      "Risk Management"
+    ],
+    "bio": "CFA charterholder and former portfolio manager with deep expertise in emerging market investments.",
+    "coursesTeught": [
+      {
+        "id": "investment-mgmt",
+        "title": "Investment Management",
+        "slug": "investment-management"
+      }
+    ],
+    "teachingPhilosophy": "Learning happens best when students engage with real problems — I bring the industry into the classroom.",
+    "publications": [
+      "\"Lean Thinking in Service Industries,\" Journal of Finance & Accounting, 2024",
+      "\"Industry 4.0 and Smart Manufacturing,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Thursday & Monday, 11:00 AM – 13:00 AM",
+    "email": "agarwal@institution.edu"
+  },
+  {
+    "id": "f10",
+    "name": "Dr. Rohan Chatterjee",
+    "slug": "dr-rohan-chatterjee",
+    "department": "Economics",
+    "researchAreas": [
+      "Macroeconomics",
+      "Development Economics",
+      "Econometrics"
+    ],
+    "bio": "Development economist whose work on financial inclusion has influenced policy in South and Southeast Asia.",
+    "coursesTeught": [
+      {
+        "id": "macro-econ",
+        "title": "Macroeconomics",
+        "slug": "macroeconomics"
+      },
+      {
+        "id": "business-stats",
+        "title": "Business Statistics",
+        "slug": "business-statistics"
+      }
+    ],
+    "teachingPhilosophy": "I focus on developing both analytical skills and emotional intelligence in future leaders.",
+    "publications": [
+      "\"Building Resilient Organizations,\" Journal of Economics, 2024",
+      "\"Cross-Cultural Leadership,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Friday & Tuesday, 9:00 AM – 11:00 AM",
+    "email": "chatterjee@institution.edu"
+  },
+  {
+    "id": "f11",
+    "name": "Prof. Deepa Ramanathan",
+    "slug": "prof-deepa-ramanathan",
+    "department": "Marketing",
+    "researchAreas": [
+      "Market Research",
+      "Pricing Strategy",
+      "Retail Management"
+    ],
+    "bio": "Pioneer in digital marketing analytics with over 50 publications and multiple industry partnerships.",
+    "coursesTeught": [
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing & Analytics",
+        "slug": "digital-marketing"
+      }
+    ],
+    "teachingPhilosophy": "I believe in connecting theory with practice through real-world case studies and live projects.",
+    "publications": [
+      "\"Impact of Digital Disruption on Emerging Markets,\" Journal of Marketing, 2024",
+      "\"Valuation in Uncertain Times,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Monday & Wednesday, 10:00 AM – 12:00 AM",
+    "email": "ramanathan@institution.edu"
+  },
+  {
+    "id": "f12",
+    "name": "Dr. Amit Saxena",
+    "slug": "dr-amit-saxena",
+    "department": "Operations Management",
+    "researchAreas": [
+      "Quality Management",
+      "Six Sigma",
+      "Operations Research"
+    ],
+    "bio": "Operations research specialist with expertise applying mathematical optimization to real-world supply chains.",
+    "coursesTeught": [
+      {
+        "id": "supply-chain",
+        "title": "Supply Chain Management",
+        "slug": "supply-chain-management"
+      }
+    ],
+    "teachingPhilosophy": "My teaching approach emphasizes critical thinking and rigorous quantitative analysis.",
+    "publications": [
+      "\"Game Theory Applications in Modern Business,\" Journal of Operations Management, 2024",
+      "\"Behavioral Nudges in Policy,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Tuesday & Thursday, 11:00 AM – 13:00 AM",
+    "email": "saxena@institution.edu"
+  },
+  {
+    "id": "f13",
+    "name": "Prof. Lakshmi Subramanian",
+    "slug": "prof-lakshmi-subramanian",
+    "department": "Strategy",
+    "researchAreas": [
+      "Strategic Innovation",
+      "Corporate Governance",
+      "Business Ethics"
+    ],
+    "bio": "Award-winning author on strategic innovation, frequently featured in Harvard Business Review.",
+    "coursesTeught": [
+      {
+        "id": "corporate-gov",
+        "title": "Corporate Governance",
+        "slug": "corporate-governance"
+      },
+      {
+        "id": "business-ethics",
+        "title": "Business Ethics & Sustainability",
+        "slug": "business-ethics"
+      }
+    ],
+    "teachingPhilosophy": "I use experiential learning methods including simulations, role-plays, and industry collaborations.",
+    "publications": [
+      "\"The Future of Consumer Engagement,\" Journal of Strategy, 2024",
+      "\"Sustainable Marketing Practices,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Wednesday & Friday, 9:00 AM – 11:00 AM",
+    "email": "subramanian@institution.edu"
+  },
+  {
+    "id": "f14",
+    "name": "Dr. Nikhil Joshi",
+    "slug": "dr-nikhil-joshi",
+    "department": "Information Systems",
+    "researchAreas": [
+      "AI/ML Applications",
+      "Cloud Computing",
+      "Digital Transformation"
+    ],
+    "bio": "Former CTO at a Fortune 500 tech company, now researching digital transformation in traditional enterprises.",
+    "coursesTeught": [
+      {
+        "id": "fintech",
+        "title": "FinTech & Digital Finance",
+        "slug": "fintech"
+      }
+    ],
+    "teachingPhilosophy": "Learning happens best when students engage with real problems — I bring the industry into the classroom.",
+    "publications": [
+      "\"Lean Thinking in Service Industries,\" Journal of Information Systems, 2024",
+      "\"Industry 4.0 and Smart Manufacturing,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Thursday & Monday, 10:00 AM – 12:00 AM",
+    "email": "joshi@institution.edu"
+  },
+  {
+    "id": "f15",
+    "name": "Prof. Rekha Menon",
+    "slug": "prof-rekha-menon",
+    "department": "Organizational Behavior",
+    "researchAreas": [
+      "Change Management",
+      "Diversity & Inclusion",
+      "Talent Management"
+    ],
+    "bio": "Expert in organizational psychology with focus on building inclusive and high-performing teams.",
+    "coursesTeught": [
+      {
+        "id": "negotiation",
+        "title": "Negotiation & Conflict Resolution",
+        "slug": "negotiation"
+      },
+      {
+        "id": "business-comm",
+        "title": "Business Communication",
+        "slug": "business-communication"
+      }
+    ],
+    "teachingPhilosophy": "I focus on developing both analytical skills and emotional intelligence in future leaders.",
+    "publications": [
+      "\"Building Resilient Organizations,\" Journal of Organizational Behavior, 2024",
+      "\"Cross-Cultural Leadership,\" Academy of Management Review, 2023"
+    ],
+    "officeHours": "Friday & Tuesday, 11:00 AM – 13:00 AM",
+    "email": "menon@institution.edu"
+  }
+]

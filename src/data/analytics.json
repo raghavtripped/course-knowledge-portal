@@ -1,0 +1,232 @@
+{
+  "mostViewedCourses": [
+    {
+      "courseId": "financial-accounting",
+      "title": "Financial Accounting",
+      "views": 4520
+    },
+    {
+      "courseId": "corporate-finance",
+      "title": "Corporate Finance",
+      "views": 4180
+    },
+    {
+      "courseId": "strategy",
+      "title": "Strategic Management",
+      "views": 3890
+    },
+    {
+      "courseId": "ml-business",
+      "title": "Machine Learning for Business",
+      "views": 3650
+    },
+    {
+      "courseId": "marketing-mgmt",
+      "title": "Marketing Management",
+      "views": 3420
+    },
+    {
+      "courseId": "data-viz",
+      "title": "Data Visualization",
+      "views": 3180
+    },
+    {
+      "courseId": "entrepreneurship",
+      "title": "Entrepreneurship",
+      "views": 2950
+    },
+    {
+      "courseId": "behavioral-econ",
+      "title": "Behavioral Economics",
+      "views": 2710
+    },
+    {
+      "courseId": "ops-mgmt",
+      "title": "Operations Management",
+      "views": 2580
+    },
+    {
+      "courseId": "fintech",
+      "title": "FinTech & Digital Finance",
+      "views": 2340
+    }
+  ],
+  "resourceDownloads": [
+    {
+      "month": "Sep 2024",
+      "downloads": 1250
+    },
+    {
+      "month": "Oct 2024",
+      "downloads": 2180
+    },
+    {
+      "month": "Nov 2024",
+      "downloads": 3420
+    },
+    {
+      "month": "Dec 2024",
+      "downloads": 2890
+    },
+    {
+      "month": "Jan 2025",
+      "downloads": 4150
+    },
+    {
+      "month": "Feb 2025",
+      "downloads": 3780
+    },
+    {
+      "month": "Mar 2025",
+      "downloads": 4520
+    },
+    {
+      "month": "Apr 2025",
+      "downloads": 3100
+    },
+    {
+      "month": "May 2025",
+      "downloads": 1890
+    },
+    {
+      "month": "Jun 2025",
+      "downloads": 980
+    },
+    {
+      "month": "Jul 2025",
+      "downloads": 750
+    },
+    {
+      "month": "Aug 2025",
+      "downloads": 1580
+    }
+  ],
+  "enrollmentHeatmap": [
+    {
+      "program": "PGP",
+      "skill": "Financial Analysis",
+      "count": 285
+    },
+    {
+      "program": "PGP",
+      "skill": "Strategy",
+      "count": 310
+    },
+    {
+      "program": "PGP",
+      "skill": "Marketing",
+      "count": 245
+    },
+    {
+      "program": "PGP",
+      "skill": "Data Analytics",
+      "count": 265
+    },
+    {
+      "program": "PGP",
+      "skill": "Leadership",
+      "count": 195
+    },
+    {
+      "program": "PGP",
+      "skill": "Operations",
+      "count": 178
+    },
+    {
+      "program": "IPM",
+      "skill": "Financial Analysis",
+      "count": 95
+    },
+    {
+      "program": "IPM",
+      "skill": "Strategy",
+      "count": 68
+    },
+    {
+      "program": "IPM",
+      "skill": "Marketing",
+      "count": 110
+    },
+    {
+      "program": "IPM",
+      "skill": "Data Analytics",
+      "count": 88
+    },
+    {
+      "program": "IPM",
+      "skill": "Leadership",
+      "count": 75
+    },
+    {
+      "program": "IPM",
+      "skill": "Operations",
+      "count": 65
+    },
+    {
+      "program": "EPGP",
+      "skill": "Financial Analysis",
+      "count": 145
+    },
+    {
+      "program": "EPGP",
+      "skill": "Strategy",
+      "count": 185
+    },
+    {
+      "program": "EPGP",
+      "skill": "Marketing",
+      "count": 95
+    },
+    {
+      "program": "EPGP",
+      "skill": "Data Analytics",
+      "count": 125
+    },
+    {
+      "program": "EPGP",
+      "skill": "Leadership",
+      "count": 210
+    },
+    {
+      "program": "EPGP",
+      "skill": "Operations",
+      "count": 110
+    },
+    {
+      "program": "FPM",
+      "skill": "Financial Analysis",
+      "count": 32
+    },
+    {
+      "program": "FPM",
+      "skill": "Strategy",
+      "count": 28
+    },
+    {
+      "program": "FPM",
+      "skill": "Marketing",
+      "count": 15
+    },
+    {
+      "program": "FPM",
+      "skill": "Data Analytics",
+      "count": 45
+    },
+    {
+      "program": "FPM",
+      "skill": "Leadership",
+      "count": 18
+    },
+    {
+      "program": "FPM",
+      "skill": "Operations",
+      "count": 12
+    }
+  ],
+  "stats": {
+    "totalCourses": 156,
+    "totalFaculty": 87,
+    "totalArchivedExams": 520,
+    "totalLectureHours": 12400
+  }
+}
